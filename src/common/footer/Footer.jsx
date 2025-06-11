@@ -14,9 +14,9 @@ const Footer = () => {
       <Truck />
       {/* <footer className="w-full px-4 lg:px-8 py-6 pt-20 text-main-size relative bg-[url('/images/footer-bg.jpg')] bg-cover flex flex-col justify-center items-center gap-y-6 bg-white"> */}
       <footer className="w-full px-4 lg:px-8 py-6 pt-20 text-main-size relative bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center gap-y-6"
-      style={{
-        background: "linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url('/images/bg-image.jpg')"
-      }}
+        style={{
+          background: "linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url('/images/bg-image.jpg')"
+        }}
       >
         <div className="absolute w-full top-0 left-0">
           <FooterSVG />
@@ -70,7 +70,7 @@ const Footer = () => {
             {/* <div className="grid grid-cols-[1.5fr_2fr] w-full gap-x-5 gap-y-4"> */}
             <div className="grid grid-cols-1 w-full gap-x-5 gap-y-4">
               <div className="grid grid-cols-1 gap-y-2 w-full">
-              <FooterLinksCard item={menuLinks[0]} />
+                <FooterLinksCard item={menuLinks[0]} />
                 <FooterLinksCard item={menuLinks[1]} />
                 {/* <FooterLinksCard item={menuLinks[3]} /> */}
               </div>
@@ -84,11 +84,11 @@ const Footer = () => {
           <span>
             Designed & Developed by{" "}
             <a
-              href="https://www.jaikviktechnology.com/"
+              href="https://spiralrehrsolutions.com/"
               className="text-blue-700 underline hover:text-blue-900 transition-all duration-300"
               target="_blank"
             >
-              Jaikvik Technology India Pvt. Ltd.
+              Spirale HR Solutions Pvt. Ltd.
             </a>
           </span>
         </section>
