@@ -1,0 +1,48 @@
+$bg-color: #000000;
+
+.navlink {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0%; // Start from 0%
+        position: absolute;
+        bottom: -2px;
+        background-color: $bg-color;
+        transition: all 0.2s ease-in-out; // Apply transition here
+    }
+
+    &:hover::before {
+        left: 0; // Ensure it starts from the left
+        width: 100%; // Expands on hover
+    }
+
+    &:not(:hover)::before {
+        right: 0;
+        width: 0%;
+    }
+}
+
+.navlink-active {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0%; // Start from 0%
+        position: absolute;
+        bottom: -2px;
+        background-color: $bg-color;
+        transition: all 0.2s ease-in-out; // Apply transition here
+    }
+
+    &::before {
+        left: 0; // Ensure it starts from the left
+        width: 100%; // Expands on hover
+    }
+}
